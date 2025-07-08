@@ -35,26 +35,33 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Client Event Management Platform",
       description:
-        "Full-stack web application with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+        "Role-based MERN stack web app enabling event organizers to create, monitor, and manage events. Features secure OAuth 2.0 login, JWT-based auth, real-time guest approval, and interactive UI with shadcn/ui.",
+      tech: [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "shadcn/ui",
+      ],
       link: "#",
       github: "#",
     },
     {
-      title: "AI-Powered Chat App",
+      title: "NexTask – Task Manager Web App",
       description:
-        "Real-time messaging application with AI integration. Built with modern web technologies and WebSocket connections.",
-      tech: ["React", "Socket.io", "Python", "OpenAI"],
+        "Personal productivity platform with robust task CRUD, priority tagging, deadline tracking, and JWT-based auth. Optimized UI reduces navigation time and improves task completion with real-time progress tracking.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
       link: "#",
       github: "#",
     },
     {
-      title: "Creative Portfolio CMS",
+      title: "Forknight – Gamified GitHub Contributions",
       description:
-        "Content management system for creative professionals. Features drag-and-drop interface and responsive design.",
-      tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+        "Open-source platform that gamifies GitHub activity. Tracks commits, PRs, and issues in real-time, visualizing user progress with a leaderboard. Built with MERN stack and GitHub OAuth integration.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "GitHub OAuth"],
       link: "#",
       github: "#",
     },
@@ -218,6 +225,36 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+
+      {/* About Me Section */}
+      {/* <section id="about" className="py-20 relative">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
+            About Me
+          </h2>
+          <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:bg-white/30 transition-all duration-300">
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <p className="text-lg">
+                I'm a B.Tech student ('27) passionate about full-stack web
+                development, open source, and building impactful digital
+                products. I work primarily with the MERN stack and enjoy turning
+                complex ideas into clean, user-friendly applications.
+              </p>
+              <p className="text-lg">
+                I've contributed to 10+ open-source projects through programs
+                like GSSoC and built platforms ranging from productivity tools
+                to gamified developer experiences.
+              </p>
+              <p className="text-lg">
+                Currently, I'm deepening my backend expertise by exploring
+                real-time systems, microservices, and developer tooling. Outside
+                of tech, I enjoy puzzles and collaborating on creative projects
+                with peers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* Services Section */}
       <section id="services" className="py-20 relative">
