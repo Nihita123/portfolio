@@ -232,74 +232,83 @@ const Portfolio = () => {
 
       <SkillsSection />
       {/* Services Section */}
-      <section id="services" className="py-20 relative">
+      {/* Services Section */}
+      {/* <section id="services" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
             What I Do
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105 text-center group"
-              >
-                <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  {service.title}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
+            <div className="md:row-span-2 bg-gradient-to-br from-purple-200 to-purple-300 rounded-3xl p-10 text-gray-800 hover:shadow-2xl transition-all duration-300 hover:scale-105 group border border-white/40">
+              <div className="mb-8">
+                <Code className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform text-gray-800" />
+                <h3 className="text-3xl font-bold mb-4 text-gray-800">
+                  Crafting Scalable Web Solutions
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {service.description}
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  I’m working on full-stack web development using the MERN
+                  stack. With a strong focus on performance, maintainability,
+                  and design, I turn ideas into high-quality, production-ready
+                  digital products. I’m currently exploring real-time systems,
+                  backend architecture, and building an interest in DevOps to
+                  enhance deployment and infrastructure efficiency.
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                  <span className="text-gray-700">
+                    Frontend: React, Next.js, TypeScript
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                  <span className="text-gray-700">
+                    Backend: Node.js, Express, MongoDB
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                  <span className="text-gray-700">
+                    Tools: Git, Docker, AWS, Vercel
+                  </span>
+                </div>
+              </div>
+            </div>
 
-      {/* Recommendations Section */}
-      <section id="recommendations" className="py-20 relative">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
-            Client Testimonials
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:bg-white/30 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold">JS</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-800">Jane Smith</h4>
-                  <p className="text-gray-600">CEO, Tech Startup</p>
-                </div>
+            
+            <div className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/50 hover:bg-white/40 transition-all duration-300 hover:scale-105 group">
+              <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Palette className="w-8 h-8" />
               </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                UI/UX Design
+              </h3>
               <p className="text-gray-700 leading-relaxed">
-                "Working with NIHITAKO was an absolute pleasure. Their attention
-                to detail and creative approach transformed our vision into
-                reality. The final product exceeded all expectations."
+                Creating intuitive and engaging user interfaces with tools like
+                Figma. I focus on user-centered design principles to deliver
+                exceptional digital experiences.
               </p>
             </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:bg-white/30 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold">MD</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-800">Mike Davis</h4>
-                  <p className="text-gray-600">Creative Director</p>
-                </div>
+
+            
+            <div className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/50 hover:bg-white/40 transition-all duration-300 hover:scale-105 group">
+              <div className="bg-gradient-to-r from-purple-400 to-purple-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Lightbulb className="w-8 h-8" />
               </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Problem Solving
+              </h3>
               <p className="text-gray-700 leading-relaxed">
-                "Exceptional work quality and professional communication
-                throughout the project. NIHITAKO delivered exactly what we
-                needed, on time and within budget."
+                I thrive on turning complex challenges into elegant solutions.
+                Whether it's optimizing performance or implementing new
+                features, I love finding innovative approaches.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="py-20 relative">
