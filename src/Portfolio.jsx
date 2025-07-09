@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react"; // optional icon
+// import profileImage from "../assets/profile.png";
 import {
   ChevronDown,
   Github,
@@ -11,6 +14,7 @@ import {
   Star,
 } from "lucide-react";
 import Marquee from "./Marquee";
+import SkillsSection from "./Skills";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -226,36 +230,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* About Me Section */}
-      {/* <section id="about" className="py-20 relative">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
-            About Me
-          </h2>
-          <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:bg-white/30 transition-all duration-300">
-            <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p className="text-lg">
-                I'm a B.Tech student ('27) passionate about full-stack web
-                development, open source, and building impactful digital
-                products. I work primarily with the MERN stack and enjoy turning
-                complex ideas into clean, user-friendly applications.
-              </p>
-              <p className="text-lg">
-                I've contributed to 10+ open-source projects through programs
-                like GSSoC and built platforms ranging from productivity tools
-                to gamified developer experiences.
-              </p>
-              <p className="text-lg">
-                Currently, I'm deepening my backend expertise by exploring
-                real-time systems, microservices, and developer tooling. Outside
-                of tech, I enjoy puzzles and collaborating on creative projects
-                with peers.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
+      <SkillsSection />
       {/* Services Section */}
       <section id="services" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-6">
